@@ -127,7 +127,7 @@ section.about .social {
     display: flex;
 }
 
-section.about .social a{
+section.about .social a {
     background: var(--dark);
     display: flex;
     align-items: center;
@@ -139,103 +139,105 @@ section.about .social a{
     transition: all .5s ease;
 }
 
-section.about .social a img{
+section.about .social a img {
     width: 100%;
     height: 100%;
     padding: 0.5rem;
 }
 
-section.about .social a :hover{
+section.about .social a :hover {
     background: var(--primary);
 }
 
-.section-heading{
-    color: var(--secondary );
-    text-align:center ;
+.section-heading {
+    color: var(--secondary);
+    text-align: center;
     margin-bottom: 1rem;
     line-height: 0.5;
 }
 
-.section-heading + p{
+.section-heading+p {
     color: var(--ternary);
     text-align: center;
     margin-bottom: 9rem;
-    font-family: 'Lato',sans-serif ;
+    font-family: 'Lato', sans-serif;
 }
 
-.section-heading span{
+.section-heading span {
     color: var(--primary);
 }
-section.services{
+
+section.services {
     background: var(--light);
 }
 
-section.services .card-wrapper{
+section.services .card-wrapper {
     display: grid;
-    grid-template-columns:  repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 2rem;
     grid-row-gap: 6rem;
 
 }
 
-section.services .card-wrapper .card{
+section.services .card-wrapper .card {
     background: var(--pure);
     padding: 3rem 2rem;
     position: relative;
     padding-top: 5rem;
-    text-align: center ;
+    text-align: center;
     transition: all .5s ease;
 }
 
-section.services .card-wrapper .card img{
-    position: absolute ;
+section.services .card-wrapper .card img {
+    position: absolute;
     top: -3.5rem;
     left: 50%;
     transform: translateX(-50%);
 }
 
-section.services .card-wrapper h2{
+section.services .card-wrapper h2 {
     font-weight: 400;
     font-size: 1.2rem;
     margin-bottom: .7rem;
 }
 
 
-section.services .card-wrapper p{
-    font-family: 'Lato',sans-serif ;
+section.services .card-wrapper p {
+    font-family: 'Lato', sans-serif;
     color: var(--ternary);
     line-height: 1.6rem;
 }
 
-section.services .card-wrapper .card:hover{
+section.services .card-wrapper .card:hover {
     background: var(--dark);
     cursor: pointer;
 }
 
-section.services .card-wrapper .card:hover h2,section.services .card-wrapper .card:hover p{
+section.services .card-wrapper .card:hover h2,
+section.services .card-wrapper .card:hover p {
     color: var(--pure);
 }
 
-section.freelancer{
+section.freelancer {
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)),url(../images/camera.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url(../images/camera.png);
     color: var(--pure);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
     padding-bottom: 17rem;
 }
 
-section.freelancer h1{
+section.freelancer h1 {
     margin-bottom: 0.5rem;
     font-size: 2rem;
 }
 
-section.freelancer p{
+section.freelancer p {
     margin-bottom: 2rem;
-    font-family: 'Lato',sans-serif ;
+    font-family: 'Lato', sans-serif;
 }
 
 /*  reviews  */
-section.reviews .slider .slide img{
+section.reviews .slider .slide img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -248,30 +250,30 @@ section.reviews .slider .slide {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding:0 10rem;
+    padding: 0 10rem;
 }
 
-section.reviews .slider .slide p{
-    font-family: 'Lato',sans-serif ;
+section.reviews .slider .slide p {
+    font-family: 'Lato', sans-serif;
     color: var(--ternary);
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
 }
 
-section.reviews .slider .slide span{
+section.reviews .slider .slide span {
     font-size: 1rem;
 }
 
-section.reviews .slider-dots .dots{
+section.reviews .slider-dots .dots {
     list-style-type: none;
-    display: flex!important;
+    display: flex !important;
     justify-content: center;
 }
 
-section.reviews .slider-dots{
+section.reviews .slider-dots {
     margin-top: 3rem;
 }
 
-section.reviews .slider-dots button{
+section.reviews .slider-dots button {
     font-size: 0;
     width: 8px;
     height: 5px;
@@ -284,7 +286,118 @@ section.reviews .slider-dots button{
 }
 
 
-section.reviews .dots li.slick-active button{
-     background: var(--primary);
-     width: 30px;
+section.reviews .dots li.slick-active button {
+    background: var(--primary);
+    width: 30px;
+}
+
+
+
+/* ---------------------work---------------------- */
+section.work {
+    background: var(--light);
+}
+
+section.work .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+   
+section.work .card-wrapper .card{
+    position: relative;
+    height: 250px;
+}
+
+section.work .card-wrapper .card .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(61,207,211,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--light);
+    opacity: 0;
+
+    transition: all .3s ease;
+}
+
+section.work .card-wrapper .card :hover.overlay{
+    opacity: 1;
+}
+
+section.work .card-wrapper .card .overlay a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+section.work .card-wrapper .card img{
+    height: 100%;
+    width: 100%;
+}
+/* -----------------------Blog-------------------- */
+section.blog{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+    padding-bottom: 12rem;
+}
+
+section.blog .section-heading{
+    color: var(--pure);
+}
+
+section.blog .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+
+}
+
+section.blog .card-wrapper .card{
+    background: var(--pure);
+}
+
+section.blog .card-wrapper .card .img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.blog .card-wrapper .card .card-content{
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+section.blog .card-wrapper .card .card-content h1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+section.blog .card-wrapper .card .card-content a{
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+section.blog .card-wrapper .card .card-content a:hover{
+    color: var(--primary);
+}
+
+section.blog .card-wrapper .card .card-content span{
+    color: var(--ternary);
+    font-size: 0.8rem;
+}
+section.blog .card-wrapper .card .card-content p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+section.blog .card-wrapper .card .card-content a.read-more{
+    font-size: 0.8rem;
 }
