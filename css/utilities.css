@@ -1,16 +1,16 @@
-.flex{
+.flex {
     display: flex;
 }
 
-.items-center{
+.items-center {
     align-items: center;
 }
 
-.justify-between{
-   justify-content: space-between;
+.justify-between {
+    justify-content: space-between;
 }
 
-.btn{
+.btn {
     padding: .8rem 3rem;
     font-size: 1rem;
     font-weight: 600;
@@ -21,31 +21,32 @@
     transition: .3s ease;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: var(--primary);
     color: var(--secondary);
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color: var(--secondary);
     color: var(--primary);
     border-color: var(--primary);
 }
 
-.btn-secondary{
+.btn-secondary {
     background: transparent;
-    color:var(--primary);
+    color: var(--primary);
     border-color: var(--primary);
 }
-.btn-secondary:hover{
+
+.btn-secondary:hover {
     background-color: var(--primary);
     color: var(--secondary);
 }
 
-.flex-1{
-    flex:1;
+.flex-1 {
+    flex: 1;
 }
 
-.justify-center{
+.justify-center {
     justify-content: center;
 }
